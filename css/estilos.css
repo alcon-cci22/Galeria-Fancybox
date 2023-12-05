@@ -1,0 +1,130 @@
+*{
+
+	box-sizing: border-box;
+	  font-family: "Helvetica", sans-serif;
+	   
+  }
+  
+  .nav {
+	  padding-container: 100px 0;
+	  height: 100%;
+	  display: flex;
+	  align-items: center;
+  }
+  
+  .nav__title {
+	  font-weight: 300;
+	  color: #fff;
+	  text-decoration: none;
+  }
+  
+  .nav__link {
+	  margin-left: auto;
+	  padding: 0;
+	  display: grid;
+	  grid-auto-flow: column;
+	  grid-auto-columns: max-content;
+	  gap: 2em;
+	  list-style: none;
+	  
+  }
+  
+  
+  .nav__items {
+	  list-style: none;
+  }
+  
+  .nav__links {
+  
+	  -webkit-transition: color 0.3s;
+	  -moz-transition: color 0.3s;
+	  transition: color 0.3s;
+	  color: #f8f8f8;
+	  text-transform: uppercase;
+	  font-family: 'Lato';
+	  font-size: 17px;
+	  position: relative;
+	text-decoration: none;
+  }
+  .nav__links::before {
+	  position: absolute;
+	  top: 100%;
+	  left: 50%;
+	  color: transparent;
+	  content: '•';
+	  text-shadow: 0 0 transparent;
+	  font-size: 1.2em;
+	  -webkit-transition: text-shadow 0.3s, color 0.3s;
+	  -moz-transition: text-shadow 0.3s, color 0.3s;
+	  transition: text-shadow 0.3s, color 0.3s;
+	  -webkit-transform: translateX(-50%);
+	  -moz-transform: translateX(-50%);
+	  transform: translateX(-50%);
+	  pointer-events: none;
+  }
+  
+  .nav__links:hover::before,
+  .nav__links:focus::before {
+	  color: #28262b;
+	  text-shadow: 10px 0 #28262b, -10px 0 #28262b;
+  }
+  
+  .nav__links:hover,
+  .nav__links:focus {
+	  color: rgba(226, 12, 12, 0.74);
+  }
+  
+  
+  .nav__menu {
+	  margin-left: auto;
+	  cursor: pointer;
+	  display: none;
+  }
+  
+  .nav__img {
+	  display: block;
+	  width: 30px;
+  }
+  
+  
+  .nav__close {
+	  display: none;
+  }
+  
+  body {
+	  font-family: Arial, sans-serif;
+	  padding-right: 30px;
+	  padding-left: 50px;
+	  padding-top: 5px;
+	  padding-bottom: 120px;
+	   background: rgb(189, 189, 189);
+	  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,143,38,1) 0%, rgba(150,126,197,1) 48%, rgba(0,255,222,1) 100%);
+	  background-size: 300% 100%;
+  /*    animation: gradient 15s ease infinite;*/
+  }
+  
+  
+  
+  
+  h1 {
+	  text-align: center;
+  }
+  hr{
+	  width: 100%;
+	  height: 3px;
+	  border: 0;
+	background-color: #0f0e0e;
+	border-top: 1px solid #8c8c8c;
+  }
+  
+  
+  .img-gallery a img:hover {
+	  transform: scale(1.05);
+  }
+  
+  
+  
+  
+  
+  
+  
